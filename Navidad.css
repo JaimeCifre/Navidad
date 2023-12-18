@@ -1,0 +1,113 @@
+background{
+    color: black;
+}
+.container {
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+    perspective: 3px;
+  }
+  
+  section {
+    background-size: cover;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parallax-bg{
+    background-position: center center;
+    transform: translateZ(-0.5px) scale(2);
+    background-size: cover;
+    z-index: -1;
+    height: 30vh;
+  }
+  .parallax-content{
+    z-index: -1;
+    transform: translateY(-25vh) translateZ(0px) scale(1);
+    padding-left:30px;
+    padding-right:30px;
+    text-align:left;
+    
+  }
+  .no-parallax-section{
+    
+    height: 50vh;
+  }
+  .no-parallax-content{
+    text-align:left;
+    padding:30px;
+  }
+  /*Colores de fondo*/
+  .bg-1{
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, black 0%, rgb(20, 1, 102) 100%);
+  }
+
+.img_der{
+    margin: 10px;
+    display: flex;
+  }
+
+.mi-h1 {
+    font-family: "Clicker Script", sans-serif; 
+    color: gold;
+}
+.mi-p {
+  font-family: "Clicker Script", sans-serif;
+  color: gold;
+}
+.mi1-h1 {
+    font-family: "Clicker Script", sans-serif; 
+    color: red;
+}
+.mi1-p {
+  font-family: "Clicker Script", sans-serif;
+  color: black;
+}
+button{
+    border: 0;
+    background-image: lineal-gradient(150deg, red, blue, green);
+    border-radius: 8px;
+    color: rgb(243,239,17);
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: backround-image 0.3s, transform 0.3s;
+}
+button:hover{
+    background-image: linear-gradient(150deg,blue,green,red);
+}
+button span{
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+button:hover span{
+    background: none;
+}
+button:active{
+    transform: scale(0.9);
+    background-image: linear-gradient(150deg,green,red,blue);
+}
+.Titulo{
+    text-align: center;
+}
+.Titulo{
+    color: white;
+}
+.Texto{
+    color: white;
+}
+
+footer{   
+    color: white;
+}
+footer img {
+    width: 50px; 
+    margin-left: 700px;
+    filter: invert(100%); 
+}
